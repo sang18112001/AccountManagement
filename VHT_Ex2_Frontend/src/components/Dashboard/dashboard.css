@@ -1,0 +1,43 @@
+.dashboard {
+  padding-top: 100px;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.dashboard-title {
+  font-size: 56px;
+  line-height: 80px;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+table,
+th,
+td {
+  border: 2px solid white;
+  vertical-align: middle;
+}
+th,
+td {
+  padding: 20px 30px;
+}
+table {
+  width: 100%;
+}
+td.stt,
+td.admin {
+  text-align: center;
+}
+td.deleteUser {
+  text-align: right;
+}
+td.deleteUser button {
+  border: none;
+  background: none;
+}
+td.deleteUser button svg {
+  color: red;
+}
+tr:hover {
+  background-color: #98dbff;
+}
