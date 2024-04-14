@@ -1,7 +1,7 @@
 <h1 align="center"> 🖥️ Account Management Project 🖥️ </h1>
 
 <p align="center">
-<img src="./Images/demo.gif" alt="animated" width="1280" height="720"/>
+<img src="./Images/demo.gif" alt="animated" width="1280" height="500"/>
 </p>
 
 <p align="center">💡 A Fullstack Login System With Simple Design. </p>
