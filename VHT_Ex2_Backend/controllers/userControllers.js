@@ -1,5 +1,5 @@
 const bcrypt = require("bcrypt");
-const { dbAllAsync, dbRunAsync, db } = require("../constant");
+const { dbAllAsync, dbRunAsync, db } = require("../utils");
 
 const userController = {
   getUsers: async (req, res) => {

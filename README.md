@@ -1,38 +1,95 @@
-# Mô tả kết quả đạt được của bài test
+<h1 align="center"> 🖥️ Account Management Project 🖥️ </h1>
 
-## Bài tập 1: Viết frontend nền tảng web hiển thị 1000 hình tròn với đường kính từ 10 tới 100 pixel chuyển động với quỹ đạo bất kỳ, vận tốc > 10pixel / s. Hiển thị FPS, yêu cầu >= 30. Có thể thử dụng thư viện.
+<p align="center">
+<img src="./Images/demo.gif" alt="animated" width="1280" height="720"/>
+</p>
 
-Link github: [https://github.com/sang18112001/VHT_Ex1](https://github.com/sang18112001/VHT_Ex1)
+<p align="center">💡 A Fullstack Login System With Simple Design. </p>
+<p align="center">
+<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"/>
+<img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white"/>
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
+<img src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white"/>
+<img src="https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white"/>
+<img src="https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white"/>
+<img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=JSON%20web%20tokens&logoColor=white"/>
+ </p>
 
-## Bài tập 2: Viết một hệ thống gồm 1 frontend nền tảng web và 1 backend ngôn ngữ tùy chọn thực hiện các nhiệm vụ sau:
+# Getting Started
 
-- Hiển thị trên frontend khung đăng nhập thông tin gồm có: username, pasword
-- Frontend kết nối tới backend để xác nhận username và password, thông báo thành công / không thành công
-  - Notes:
-    1. Frontend không gửi password dạng clear text tới backend (cần mã hóa hoặc phương pháp khác)
-    2. Frontend kết nối tới backend sử dụng kết nối bảo mật
-    3. Cơ sở dữ liệu lưu thông tin người dùng sử dụng sqlite. Không lưu mật khẩu dạng clear text trong CSDL.
+This is a simple fullstack project that demonstrates user registration, login, and account management functionality. The project consists of a React frontend and a Nodejs backend.
 
-Link github:
-  - Frontend: [https://github.com/sang18112001/VHT_Ex2_Frontend](https://github.com/sang18112001/VHT_Ex2_Frontend)
-  - Backend: [https://github.com/sang18112001/VHT_Ex2_Backend](https://github.com/sang18112001/VHT_Ex2_Backend)
+## Features
 
-### Mô tả: Bài tập được thực hiện với chức năng đăng kí, đăng nhập và sửa đổi thông tin tài khoản.
+- User registration
+- User login
+- Displaying and updating user profile information
+- Logging out
+- Deleting user accounts
 
-#### a. Frontend
-- Công nghệ sử dụng: ReactJs.
-- Cho phép người dung thực hiện đăng kí và đăng nhập qua form.
-- Dữ liệu về mật khẩu đã được mã hóa và gửi sang phía của backend.
-- Sau khi người dung đăng nhạp, học có quyền để sửa đổi thông tin người dùng. Tuy nhiên đối với những tài khoản mà không có quyền admin thì không thể truy cập vào trang dashboard để xóa đi thông tin người dùng.
-- Tài khoản admin đã được tạo để sử dụng:
-  - Username: admin
-  - Password: 1213456
+## Installation and Setup
 
-#### b. Backend
-- Công nghệ sử dụng: NodeJs, SQLite
-- Backend đã thực hiện được chức năng authentication và authorization.
-- Một số chức năng như lấy hoặc hóa thông tin người dùng, phải có mã token mới được phép thực hiện
-- Tạo được chức năng đăng kí cho người dùng qua việc lấy mật khẩu đã được mã hóa từ phía frontend và lưu chúng trong SQLite.
-- Qua việc sử dụng jwt, khi người dùng đăng nhập thành công, thì sẽ nhận được một mã accessToken (được lưu trữ ở trong localstorage).
-- Một mã refreshToken cũng được tạo thành công khi người dùng đăng nhập thành công và được lưu trong cookies.
-- Khi accessToken hết hạn, refreshToken được lấy ra từ cookies để tạo ra một mã accessToken mới cho người dùng.
+### I. Backend and Database
+
+1. In terminal, navigate to the `./VHT_Ex2_Backend` directory
+
+```
+cd VHT_Ex2_Backend
+```
+
+2. Install the dependencies using the following command:
+
+```
+npm install
+```
+
+3. Run the following command to start the Nodejs application:
+
+```
+npm start // start the application
+```
+
+The backend server will run on `http://localhost:8080`.
+
+### II. Frontend
+
+1. Navigate to the `./VHT_Ex2_Frontend` directory
+
+```
+cd VHT_Ex2_Frontend
+```
+
+2. Install the dependencies using the following command:
+
+```
+npm install
+```
+
+3. Start the development server using the following command:
+
+```
+npm start
+```
+
+The frontend application will run be running on `http://localhost:3000`.
+
+## III. Database
+
+1. Download SQL from website: <a href="https://www.sqlite.org/download.html">SQL download</a>
+2. Download SQL studio from website: <a href="https://sqlitestudio.pl/">SQL Studio download</a>
+3. Run SQL Studio and open the database "./VHT_Ex2_Backend/userData.db".
+
+## IV. Usage
+
+1.  Open a web browser and navigate to `http://localhost:3000`.
+2.  Register a new user account by clicking the "Register" link and filling out the registration form.
+3.  Log in using the registered account credentials by clicking the "Login" link and filling out the login form.
+4.  Log out by clicking the "Logout" button.
+5.  The user's profile information is displayed in the homepage.
+6.  You can update your information such as your name, username or password.
+    **Note:** For users with admin privileges, they can access the dashboard page to delete other user accounts without admin permission.
+    ```
+    Admin account:
+        username: admin
+        password: 123456
+    ```

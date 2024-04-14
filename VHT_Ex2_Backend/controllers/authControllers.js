@@ -5,7 +5,7 @@ const {
   tokenCreation,
   decodePassword,
   db,
-} = require("../constant");
+} = require("../utils");
 const jwt = require("jsonwebtoken");
 var CryptoJS = require("crypto-js");
 
