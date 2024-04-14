@@ -3,14 +3,12 @@ import React from "react";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { deleteUser, getAllUsers } from "../../redux/apiRequest";
-import { useNavigate } from "react-router-dom";
 import { FaTrash } from "react-icons/fa";
 import "./common.style.css";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 function TableUser({ user, currentUser, stt, axiosJWT }) {
   const dispatch = useDispatch();
-  const navigate = useNavigate();
   const [show, setShow] = useState(false);
   toast.configure();
   const handleDelete = (e) => {
