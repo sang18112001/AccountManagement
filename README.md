@@ -71,13 +71,13 @@ npm install
 npm start
 ```
 
-The frontend application will run be running on `http://localhost:3000`.
+The frontend application will run on `http://localhost:3000`.
 
 ## III. Database
 
 1. Download SQL from website: <a href="https://www.sqlite.org/download.html">SQL download</a>
 2. Download SQL studio from website: <a href="https://sqlitestudio.pl/">SQL Studio download</a>
-3. Run SQL Studio and open the database "./VHT_Ex2_Backend/userData.db".
+3. Run SQL Studio and open the database `./VHT_Ex2_Backend/userData.db`.
 
 ## IV. Usage
 

@@ -28,7 +28,6 @@ const authController = {
       res.status(500).send("Internal Server Error");
     }
   },
-
   loginUser: async (req, res) => {
     const { username, password, isCheck } = req.body;
     const selectQuery = `SELECT * FROM user WHERE username = ?`;
