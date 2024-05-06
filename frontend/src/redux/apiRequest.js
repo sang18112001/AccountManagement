@@ -29,7 +29,7 @@ export const loginUser = async (user, dispatch, navigate, setMessage) => {
       {
         withCredentials: true,
       }
-    );
+    ); 
     dispatch(loginSuccess(response?.data));
     navigate("/");
   } catch (error) {
@@ -43,12 +43,13 @@ export const registerUser = async (newUser, dispatch, navigate, setMessage) => {
   axios
     .post(`${process.env.REACT_APP_BASE_URL}/auth/register`, newUser)
     .then((response) => {
+      console.log(response)
       dispatch(registerSuccess());
       navigate("/login");
     })
     .catch((error) => {
       dispatch(registerFailed());
-      setMessage(error.response.data);
+      setMessage(error?.response?.data);
     });
 };
 

@@ -1,7 +1,7 @@
 <h1 align="center"> 🖥️ Account Management Project 🖥️ </h1>
 
 <p align="center">
-<img src="./Images/demo.gif" alt="animated" width="1280" height="500"/>
+<img src="./images/demo.gif" alt="animated" width="1280" height="500"/>
 </p>
 
 <p align="center">💡 A Fullstack Login System With Simple Design. </p>
@@ -31,10 +31,10 @@ This is a simple fullstack project that demonstrates user registration, login, a
 
 ### I. Backend and Database
 
-1. In terminal, navigate to the `./VHT_Ex2_Backend` directory
+1. In terminal, navigate to the `./backend` directory
 
 ```
-cd VHT_Ex2_Backend
+cd backend
 ```
 
 2. Install the dependencies using the following command:
@@ -53,10 +53,10 @@ The backend server will run on `http://localhost:8080`.
 
 ### II. Frontend
 
-1. Navigate to the `./VHT_Ex2_Frontend` directory
+1. Navigate to the `./frontend` directory
 
 ```
-cd VHT_Ex2_Frontend
+cd frontend
 ```
 
 2. Install the dependencies using the following command:
@@ -77,7 +77,7 @@ The frontend application will run on `http://localhost:3000`.
 
 1. Download SQL from website: <a href="https://www.sqlite.org/download.html">SQL download</a>
 2. Download SQL studio from website: <a href="https://sqlitestudio.pl/">SQL Studio download</a>
-3. Run SQL Studio and open the database `./VHT_Ex2_Backend/userData.db`.
+3. Run SQL Studio and open the database `./backend/userData.db`.
 
 ## IV. Usage
 
