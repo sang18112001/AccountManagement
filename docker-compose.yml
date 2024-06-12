@@ -1,0 +1,27 @@
+version: '3.4'
+services:
+  backend:
+    build: ./backend
+    container_name: backend
+    environment:
+      - PORT=8080
+    ports:
+      - '8080:8080'
+    expose:
+      - '8080'
+    networks:
+      - integration
+  frontend:
+    build: ./frontend
+    container_name: frontend
+    environment:
+      - REACT_API_BASE_URL=http://localhost:8080
+    ports:
+      - '3000:3000'
+    expose:
+      - '3000'
+    networks:
+      - integration
+networks:
+  integration:
+    driver: bridge

@@ -93,3 +93,5 @@ The frontend application will run on `http://localhost:3000`.
         username: admin
         password: 123456
     ```
+
+### V. Comparison among local storage, cookie và session.
